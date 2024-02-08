@@ -297,7 +297,7 @@ def cmd_list(args, parser):
 					output.write(",\n")
 				else:
 					output.write("\n")
-				output.write('\t{"address": 0x%X, "size": 0x%X}' % (addr, size))
+				output.write('\t{"address": %d, "size": %d}' % (addr, size))
 			else:
 				output.write("0x%X\t0x%X\n" % (addr, size))
 		if args.json:
@@ -364,7 +364,7 @@ def cmd_dump_all(args, parser):
 					output.write(u",\n")
 				else:
 					output.write(u"\n")
-				output.write(u'\t{"address": 0x%X, "size": 0x%X, "crc32": 0x%X, "filename": %s}' % (addr, size, crc, json.dumps(filename)))
+				output.write(u'\t{"address": %d, "size": %d, "crc32": %d, "filename": %s}' % (addr, size, crc, json.dumps(filename)))
 			else:
 				output.write(u"0x%X\t0x%X\t0x%X\t%s\n" % (addr, size, crc, filename))
 		if args.json:
