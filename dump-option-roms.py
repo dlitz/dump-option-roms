@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # dlitz 2024
 # Ref: https://en.wikipedia.org/wiki/Option_ROM
+# This is compatible with Python 2.7 and Python 3
 
 from argparse import ArgumentParser
 import struct
@@ -13,7 +14,7 @@ from logging import getLogger
 from io import StringIO
 
 DEFAULT_START_ADDR = 0xC0000
-DEFAULT_END_ADDR = 0xF5FFF 	# 0xF4000 + 8192 - 1
+DEFAULT_END_ADDR = 0xF5FFF	# 0xF4000 + 8192 - 1
 DEFAULT_STEP = 0x800		# 2 KiB steps
 
 globalLogger = getLogger(__name__)
@@ -375,3 +376,5 @@ def init_logging():
 
 if __name__ == '__main__':
 	main()
+
+# vim:set sw=8 sts=8 noet:
