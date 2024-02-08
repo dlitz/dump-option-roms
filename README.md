@@ -1,5 +1,9 @@
 # dump-option-roms
-Python script to dump Option ROMs from Linux
+Python script to dump Option ROMs from Linux.  It works by reading `/dev/mem`.
+
+The script works in both Python 3 and Python 2.7.  Python 2 compatibility is
+maintained so that it can run on old hardware with somewhat old Linux distros
+(tested on Debian 8 "jessie").
 
 ```
 usage: dump-option-roms.py [-h] [--start-addr START_ADDR]
