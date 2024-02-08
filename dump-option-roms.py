@@ -1,5 +1,6 @@
 #!/usr/bin/env python
-# dlitz 2024
+# SPDX-License-Identifier: MIT
+# Copyright 2024 Darsey Litzenberger <dlitz@dlitz.net>
 # Ref: https://en.wikipedia.org/wiki/Option_ROM
 # This is compatible with Python 2.7 and Python 3
 
